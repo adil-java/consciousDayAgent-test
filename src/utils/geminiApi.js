@@ -10,6 +10,7 @@ export const generateAIInsights = async (formData) => {
   Top 3 Priorities: ${formData.priorities || 'No priorities listed'}
   
   Please provide thoughtful insights about their inner state, dream interpretation, energy analysis, and practical day strategy suggestions. Keep it warm and encouraging.
+  use html tags for bolding the text and headings
   `;
   
   try {
