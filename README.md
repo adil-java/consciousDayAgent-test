@@ -1,31 +1,116 @@
-# Daily Insight Weaver
 
-**Daily Insight Weaver** is a tool designed to help users collect, organize, and reflect on daily insights efficiently. It streamlines the process of capturing thoughts, ideas, and learnings, making it easier to track personal or team growth over time.
+````markdown
+# ConsciousDay Agent 🧘‍♂️📝
 
-## Features
+**ConsciousDay Agent** is a journaling-based AI assistant built with React.js and powered by Google's Gemini LLM API. It helps users reflect on their day, interpret their dreams, and generate mindful, personalized strategies for daily success.
 
-- Simple and intuitive interface for daily entries
-- Tagging and categorization of insights
-- Search and filter functionality
-- Export and backup options
+---
 
-## Getting Started
+## ✨ Features
 
-1. Clone the repository.
-2. Install dependencies.
-3. Run the application and start weaving your daily insights!
+- 🗒 Morning Journal, Dream Log, and Daily Intentions input
+- 🤖 AI-generated:
+  - Inner Reflection Summary
+  - Dream Interpretation
+  - Energy/Mindset Insight
+  - Suggested Day Strategy
+- 🗓 Optional: Date picker to view past entries (stored in localStorage)
+- 🎨 Clean and minimal UI with responsive design
 
-## API Key Setup
+---
 
-This project uses the Gemini API, and the API key must be kept hidden in a `.env` file.
+## 🛠 Tech Stack
 
-**To run the app locally:**
-1. Obtain your Gemini API key from the Gemini platform.
-2. Create a `.env` file in the root directory of the project.
-3. Add your API key to the `.env` file in the following format:
+| Component    | Technology                |
+|--------------|---------------------------|
+| **Frontend** | React.js (JavaScript)     |
+| **AI Model** | Gemini Pro (Google LLM)   |
+| **Database** | localStorage              |
+| **API SDK**  | [@google/generative-ai](https://www.npmjs.com/package/@google/generative-ai) |
 
-    ```
-    GEMINI_API_KEY=your_api_key_here
-    ```
+---
 
-Make sure not to share your API key publicly.
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/consciousday-agent.git
+cd consciousday-agent
+````
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Set Up Environment Variables
+
+Create a `.env` file in the root:
+
+```
+REACT_APP_GEMINI_API_KEY=your_google_generative_ai_api_key
+```
+
+> ⚠️ Never expose API keys in frontend apps. Consider routing through a secure backend in production.
+
+---
+
+## 🧠 How It Works
+
+1. User submits:
+
+   * Morning Journal
+   * Dream
+   * Daily Intention
+   * Top 3 Priorities
+
+2. A prompt is dynamically built and sent to Gemini API.
+
+3. Gemini returns structured insights:
+
+   * Reflection
+   * Dream meaning
+   * Energy insights
+   * Strategy for the day
+
+
+
+## 📦 Folder Structure
+
+```
+```
+└── 📁src
+    └── 📁components
+        └── AIResponseDisplay.tsx
+        └── DatePicker.tsx
+        └── Header.tsx
+        └── JournalForm.tsx
+    └── 📁lib
+        └── utils.ts
+    └── 📁pages
+        └── Index.tsx
+        └── NotFound.tsx
+    └── 📁utils
+        └── geminiApi.js
+        └── localStorage.js
+    └── App.css
+    └── App.tsx
+    └── index.css
+    └── main.tsx
+    └── vite-env.d.ts
+```
+
+---
+
+## ✅ To-Do / Upcoming Features
+
+* 🔒 Add authentication (Google/Firebase)
+* 🧪 Add unit tests for prompt builder and components
+* 🧠 Save and query past entries via Firestore
+* 📱 Improve mobile UI/UX
+
+---
+
+
