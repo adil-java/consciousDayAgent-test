@@ -23,7 +23,7 @@ const Index = () => {
       <Header />
       <Tabs defaultValue="Ai Chat" onValueChange={(value) => {
         if (value === "history") refreshData();
-      }} className="w-auto">
+      }} className="w-auto bg-gradient-to-l ">
         <main className="container mx-auto px-4 py-8">
           <TabsList>
             <TabsTrigger value="history">History</TabsTrigger>

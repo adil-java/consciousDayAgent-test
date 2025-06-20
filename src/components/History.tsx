@@ -26,7 +26,7 @@ export default function History({ data }: HistoryProps) {
   const entries = Object.entries(data);
 
   return (
-    <div>
+    <div className='bg-white rounded-lg'>
       <Table>
         <TableCaption>Morning Reflection History</TableCaption>
         <TableHeader>
