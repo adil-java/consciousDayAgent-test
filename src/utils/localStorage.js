@@ -32,7 +32,7 @@ export const getAllJournalEntries = () => {
   }
 };
 
-const getStoredEntries = () => {
+export const getStoredEntries = () => {
   try {
     const stored = localStorage.getItem(STORAGE_KEY);
     return stored ? JSON.parse(stored) : {};

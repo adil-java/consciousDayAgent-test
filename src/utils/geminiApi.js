@@ -14,7 +14,6 @@ export const generateAIInsights = async (formData) => {
   `;
   
   try {
-    console.log(import.meta.env.VITE_GEMINI_API);
     const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY}`, {
       method: 'POST',
       headers: {
