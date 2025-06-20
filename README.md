@@ -1,5 +1,4 @@
 
-````markdown
 # ConsciousDay Agent 🧘‍♂️📝
 
 **ConsciousDay Agent** is a journaling-based AI assistant built with React.js and powered by Google's Gemini LLM API. It helps users reflect on their day, interpret their dreams, and generate mindful, personalized strategies for daily success.
