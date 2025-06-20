@@ -101,13 +101,5 @@ REACT_APP_GEMINI_API_KEY=your_google_generative_ai_api_key
     └── vite-env.d.ts
 ```
 
-```
-## ✅ To-Do / Upcoming Features
-
-* 🔒 Add authentication (Google/Firebase)
-* 🧪 Add unit tests for prompt builder and components
-* 🧠 Save and query past entries via Firestore
-* 📱 Improve mobile UI/UX
-```
 
 
