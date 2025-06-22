@@ -15,7 +15,7 @@ const AIResponseDisplay = ({ response }) => {
         <CardContent className="bg-slate-700">
           <div className="prose prose-sm max-w-none bg-slate-700 text-white rounded-b-lg">
             <div
-              className="text-gray-200 leading-relaxed whitespace-pre-wrap"
+              className="text-gray-200 leading-relaxed "
               dangerouslySetInnerHTML={{ __html: response }}
             />
           </div>

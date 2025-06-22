@@ -10,9 +10,9 @@ export const generateAIInsights = async (formData) => {
   Top 3 Priorities: ${formData.priorities || 'No priorities listed'}
   
   Please provide thoughtful insights about their inner state, dream interpretation, energy analysis, and practical day strategy suggestions. Keep it warm and encouraging.
-  use html tags for bolding the text and headings
+  use html tags and headings should be bold and center and remember highlights to yellow(text-color:yellow) all the information given by user in your reply everywhere the word are repeated
   `;
-  
+   
   try {
     const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY}`, {
       method: 'POST',

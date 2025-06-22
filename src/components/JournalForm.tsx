@@ -20,11 +20,13 @@ const JournalForm = () => {
     priorities: ''
   });
   const [aiResponse, setAiResponse] = useState(null);
+
   const [isLoading, setIsLoading] = useState(false);
   const [selectedDate, setSelectedDate] = useState(new Date());
   const { toast } = useToast();
 
   const handleInputChange = (field, value) => {
+
     setFormData(prev => ({
       ...prev,
       [field]: value
@@ -94,11 +96,12 @@ const JournalForm = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto space-y-8 ">
+    <div className="max-w-4xl mx-auto space-y-4">
+      
       <DatePicker selectedDate={selectedDate} onDateChange={handleDateChange} />
       
       <Card className="bg-white/90 backdrop-blur-sm shadow-xl border-0 ">
-        <CardHeader className="pb-6">
+        <CardHeader className="">
           <CardTitle className="text-2xl text-center text-gray-800 flex items-center justify-center gap-2">
             <Sparkles className="text-purple-500" />
             Morning Reflection
