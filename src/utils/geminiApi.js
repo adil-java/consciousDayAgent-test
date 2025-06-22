@@ -2,7 +2,7 @@
 const API_KEY =`${import.meta.env.VITE_GEMINI_API}`; // gemini APi KEY
 export const generateAIInsights = async (formData) => {
   const prompt = `
-  Based on the following morning reflection, provide insights:
+  Based on the following morning reflection, provide insights:  
   
   Morning Journal: ${formData.morningJournal}
   Dream: ${formData.dream || 'No dream recorded'}
@@ -11,9 +11,10 @@ export const generateAIInsights = async (formData) => {
   
   Please provide thoughtful insights about their inner state, dream interpretation, energy analysis, and practical day strategy suggestions. Keep it warm and encouraging.
   use html tags and headings should be bold and center and remember highlights to yellow(text-color:yellow) all the information given by user in your reply everywhere the word are repeated
-  `;
+  `; // Prompt give to Gemini
    
   try {
+    // Posting Gemini response for display it in AIResponse component
     const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY}`, {
       method: 'POST',
       headers: {
@@ -29,7 +30,7 @@ export const generateAIInsights = async (formData) => {
     });
 
     const data = await response.json();
-    
+    // Validations
     if (!response.ok) {
       throw new Error(data.error?.message || 'Failed to generate insights');
     }

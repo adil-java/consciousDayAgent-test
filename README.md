@@ -75,7 +75,6 @@ REACT_APP_GEMINI_API_KEY=your_google_generative_ai_api_key
    * Strategy for the day
 
 
-
 ## 📦 Folder Structure
 
 ```
@@ -92,10 +91,10 @@ REACT_APP_GEMINI_API_KEY=your_google_generative_ai_api_key
         └── Index.tsx
         └── NotFound.tsx
     └── 📁utils
-        └── geminiApi.js
-        └── localStorage.js
+        └── geminiApi.js // GeminiAPI Handle using Node JS
+        └── localStorage.js // Saving data to the localstorage
     └── App.css
-    └── App.tsx
+    └── App.tsx // Main File where Routes are Managed 
     └── index.css
     └── main.tsx
     └── vite-env.d.ts
