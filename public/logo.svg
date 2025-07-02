@@ -1,0 +1,13 @@
+<svg width="120" height="60" viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" /> <!-- blue-600 -->
+      <stop offset="100%" stop-color="#9333EA" /> <!-- purple-600 -->
+    </linearGradient>
+  </defs>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+        font-size="40" font-family="sans-serif" font-weight="bold"
+        fill="url(#aiGradient)">
+    AI
+  </text>
+</svg>

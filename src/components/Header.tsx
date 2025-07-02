@@ -8,8 +8,9 @@ const Header = () => {
         <div className=" flex items-center justify-center flex-col">
           <div>
           <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent flex gap-2">
-          <img src="/favicon.ico.svg" alt="logo" className='w-10 h-10'/>
-            ConsciousDay Agent 
+       
+
+           ConsciousDay Agent 
           </h1>
           </div>
           <p className="text-gray-600 mt-2 text-lg">
